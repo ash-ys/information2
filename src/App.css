@@ -20,18 +20,16 @@ input {
 
 .lists {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100vw;
-  margin: 20px;
-
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 100px);
 }
 
 .card {
-  padding: 20px;
-  background-color: #d3dedc;
-  margin: 20px;
-  text-align: center;
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  display: block;
+  block-size: 6px;
 }
 
 .card img {
