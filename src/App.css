@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #92a9bd;
+}
 
 h1 {
   text-align: center;
@@ -20,13 +23,15 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   margin: 20px;
+
 }
 
 .card {
   padding: 20px;
-  background-color: rgb(226, 223, 223);
+  background-color: #d3dedc;
   margin: 20px;
   text-align: center;
+  
 }
 
 .card img {
