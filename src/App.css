@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background-color: #92a9bd;
+  background-color: #ffffff;
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 input {
@@ -18,20 +20,26 @@ input {
   width: 300px;
 }
 
+.desc {
+  text-align: center;
+}
+
 .lists {
+  text-align: center;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  display: block;
-  block-size: 6px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+ 
 }
 
 .card img {
-  width: 80%;
+  width: 70%;
 }
