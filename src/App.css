@@ -3,14 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  color: #222831;
 }
 
 input {
@@ -20,24 +22,33 @@ input {
   width: 300px;
 }
 
-.desc {
-  text-align: center;
+.lists {
+  max-width: fit-content;
+  margin: 20px;
 }
 
-.lists {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+.lists h1 {
+  text-align: unset;
+  margin-left: 45px;
+  overflow: hidden;
 }
 
 .card {
+  padding: 20px;
+  background-color: #eeeeee;
+  margin: 40px;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  overflow: scroll;
+  flex-direction: row;
   align-content: center;
-  margin-bottom: 20px;
-  margin-top: 10px;
- 
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  color: #222831;
+  background-color: #00adb5;
 }
 
 .card img {

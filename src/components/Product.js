@@ -4,11 +4,14 @@ import ProductDes from "./ProductDes";
 
 const Product = ({ data }) => {
   return (
+      <div>
+          <h2 className="title">{data.title}</h2>
     <div className="card">
-        <h2>{data.title}</h2>
+        
         {data.items.map((item) => {
           return <ProductDes key={item.id} item={item} />;
         })}
+    </div>
     </div>
   );
 };
